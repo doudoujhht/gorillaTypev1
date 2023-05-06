@@ -1,0 +1,29 @@
+[
+  {
+    "title": "behavior",
+    "settings": [
+      {
+        "title": "test difficulty",
+        "description": "Normal is the classic type test experience. Expert fails the test if you submit (press space) an incorrect word. Master fails if you press a single incorrect key (meaning you have to achieve 100% accuracy).",
+        "options": [
+          "normal",
+          "expert",
+          "master"
+        ],
+        "icon": "fas fa-star"
+      },
+
+      {
+        "title": "test difficulty",
+        "description": "Press tab or esc to quickly restart the test, or to quickly jump to the test page. Both options disable tab navigation on most parts of the website. Using the \"esc\" option will move opening the commandline to thetabkey.",
+        "options": [
+          "off",
+          "tab",
+          "exc"
+        ],
+        "icon": "fas fa-redo-alt"
+      }
+
+    ]
+  }
+]

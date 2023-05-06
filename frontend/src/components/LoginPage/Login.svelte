@@ -27,9 +27,9 @@
         <div class="exception flex justify-start items-center gap-2 cursor-pointer" on:click={()=>remember=!remember}>
             <div class="w-[16px] h-[16px] flex items-center justify-center bg-sub-alt-color exception checkbox " >
                 {#if remember}
-                <Icon>
-                    <ion-icon name="checkbox" class="text-main-color font-bold"></ion-icon>
-                </Icon>
+                    <Icon>
+                        <ion-icon name="checkbox" class="text-main-color font-bold"></ion-icon>
+                    </Icon>
                 {/if}
             </div>
             <span class="text-lg">
