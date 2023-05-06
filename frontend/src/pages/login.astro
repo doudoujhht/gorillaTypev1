@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Register from "../components/LoginPage/Register.svelte";
+import Login from "../components/LoginPage/Login.svelte";
+
+---
+
+<Layout title="jean">
+    <div class="flex items-center justify-around w-full">
+        <Register client:load/>
+        <Login client:load />
+    </div>
+</Layout>
