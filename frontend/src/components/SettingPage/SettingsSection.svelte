@@ -1,7 +1,7 @@
 <script lang="ts">
     export let title ="forgot the title";
     export let description = "forgot the description";
-    export let buttons:string[] = [];
+    export let options:string[] = [];
 </script>
 
 <div class="flex flex-col gap-1">
@@ -13,8 +13,8 @@
     <div class="flex justify-between">
         <p class="w-[70%] text-lg">{description}</p>
         <div class="flex w-[28%] gap-2 buttons">
-            {#each buttons as button}
-                <button>{button}</button>
+            {#each options as option}
+                <button>{option}</button>
             {/each}
         </div>
     </div>

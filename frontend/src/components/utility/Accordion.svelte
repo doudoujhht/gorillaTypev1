@@ -9,7 +9,7 @@
     let open = true;
     export let title:string = 'you forgot the title';
 </script>
-<div on:click={()=>open = !open} class="flex  flex-col pb-8">
+<div on:click={()=>open = !open} class="flex  flex-col pb-3">
     <button class=" text-sub-color text-4xl text-left cursor-pointer hover:text-text-color">
         <button class="{open? '':'-rotate-90'} text-3xl">
             <i class="fas fa-chevron-down"></i>

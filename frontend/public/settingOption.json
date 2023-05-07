@@ -14,7 +14,7 @@
       },
 
       {
-        "title": "test difficulty",
+        "title": "quick restart",
         "description": "Press tab or esc to quickly restart the test, or to quickly jump to the test page. Both options disable tab navigation on most parts of the website. Using the \"esc\" option will move opening the commandline to thetabkey.",
         "options": [
           "off",
@@ -22,8 +22,107 @@
           "exc"
         ],
         "icon": "fas fa-redo-alt"
-      }
+      },
 
+      {
+        "title": "repeat quotes",
+        "description": "Press tab or esc to quickly restart the test, or to quickly jump to the test page. Both options disable tab navigation on most parts of the website. Using the \"esc\" option will move opening the commandline to thetabkey.",
+        "options": [
+          "off",
+          "typing"
+        ],
+        "icon": "fas fa-redo-alt"
+      },
+      {
+        "title": "blind mode",
+        "description": "No errors or incorrect words are highlighted. Helps you to focus on raw speed. If enabled, quick end is recommended.",
+        "options": [
+          "off",
+          ""
+        ],
+        "icon": "fas fa-sync-alt"
+      },
+
+      {
+        "title": "always show words history",
+        "description": "This option will automatically show the words history at the end of the test. Can cause slight lag with a lot of words.",
+        "options": [
+            "on",
+            "off"
+        ],
+        "icon": "fas fa-align-left"
+      },
+      {
+        "title": "single list command line",
+        "description": "When enabled, it will show the command line with all commands in a single list instead of submenu arrangements. Selecting 'manual' will expose all commands only after typing>.",
+        "options": [
+          "on",
+          "manual"
+        ],
+        "icon": "fas fa-list"
+      },
+      {
+        "title": "",
+        "description": "When enabled, the website will use the British spelling instead of American. Note that this might not replace all words correctly. If you find any issues, please let us know.",
+        "options": [
+          "off",
+          "on"
+        ],
+        "icon": "fas fa-language"
+      }
+    ]
+  },
+  {
+    "title": "input",
+    "settings": [
+      {
+        "title": "freedom mode",
+        "description": "Allows you to delete any word, even if it was typed correctly.",
+        "options": [
+          "off",
+          "on"
+        ],
+        "icon": "fas fa-feather-alt"
+      },
+      {
+        "title": "strict space",
+        "description": "Pressing space at the beginning of a word will insert a space character when this mode is enabled.",
+        "options": [
+            "off",
+            "on"
+        ],
+        "icon": "fas fa-minus"
+      },
+      {
+        "title": "opposite shift mode",
+        "description": "This mode will force you to use oppositeshiftkeys for shifting. Using an incorrect one will count as an error. This feature ignores keys in locationsB,Y, and^because many people use the other hand for those keys. If you're using external software to emulate your layout (including QMK), you should use the \"keymap\" mode - the standard \"on\" will not work. This will enforce opposite shift based on the \"keymap layout\" setting.",
+        "options": [
+            "off",
+            "on",
+            "keymap"
+        ],
+        "icon": "fas fa-exchange-alt"
+      },
+      {
+        "title": "stop on error",
+        "description": "Letter mode will stop input when pressing any incorrect letters. Word mode will not allow you to continue to the next word until you correct all mistakes.",
+        "options": [
+            "off",
+            "word",
+            "letter"
+        ],
+        "icon": "fas fa-hand-paper"
+      },
+      {
+        "title": "confidence mode",
+        "description": "When enabled, you will not be able to go back to previous words to fix mistakes. When turned up to the max, you won't be able to backspace at all.",
+        "options": [
+            "off",
+            "on",
+            "max"
+        ],
+        "icon": "fas fa-backspace"
+      }
     ]
   }
 ]

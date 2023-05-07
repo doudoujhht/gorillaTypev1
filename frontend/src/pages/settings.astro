@@ -9,40 +9,22 @@ console.log(data + "data")
 ---
 
 <Layout>
-    <NavSetting/>
-    <div class="flex flex-col gap-8">
-        {data.map((item) => (
-                <Accordion title={item.title} client:load>
-                    {item.settings.map(({title, description, options, icon}) => (
-                        <SettingsSection title={title} description={description} options={options}>
-                            <i class={icon} slot="icon"></i>
-                        </SettingsSection>
-                    ))}
+    <main class="flex flex-col gap-10 pt-10">
+        <NavSetting/>
+        <div class="flex flex-col gap-8 pb-24">
+            {data.map((item) => (
+                    <Accordion title={item.title} client:load>
+                        {item.settings.map(({title, description, options, icon}) => (
+                                <SettingsSection title={title} description={description} options={options}>
+                                    <i class={icon} slot="icon"></i>
+                                </SettingsSection>
+                        ))}
 
-                </Accordion>
-        ))}
-        <Accordion title="behavior" client:load>
-            <div class="flex flex-col gap-8">
-                <SettingsSection title="test difficulty" description="Normal is the classic type test experience. Expert fails the test if you submit (press space) an incorrect word. Master fails if you press a single incorrect key (meaning you have to achieve 100% accuracy).">
-                    <i class="fas fa-star text-[currentColor]" slot="icon" ></i>
-                </SettingsSection>
-                <SettingsSection >
-                    <i class="fas fa-star text-[currentColor]" slot="icon" ></i>
-                </SettingsSection>
-                <SettingsSection >
-                    <i class="fas fa-star text-[currentColor]" slot="icon" ></i>
-                </SettingsSection>
-                <SettingsSection >
-                    <i class="fas fa-star text-[currentColor]" slot="icon" ></i>
-                </SettingsSection>
-                <SettingsSection >
-                    <i class="fas fa-star text-[currentColor]" slot="icon" ></i>
-                </SettingsSection>
-            </div>
+                    </Accordion>
+            ))}
+        </div>
+    </main>
 
-
-        </Accordion>
-    </div>
 </Layout>
 
 <style>
